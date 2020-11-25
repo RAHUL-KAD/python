@@ -33,7 +33,7 @@ hImg, wImg, _ = rgb.shape
 boxes = pytesseract.image_to_data(rgb)
 
 # Drawing a red boxes around word and showing a words
-for x, b in enumerate(boxes.splitlines()):
+for x, b in enumerate(boxes.splitlines()): 
     if x != 0:
         b = b.split()
         if len(b) == 12:  
